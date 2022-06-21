@@ -37,7 +37,7 @@
             <Label Text="{Binding ChargingLevel}" Grid.Row="2" Grid.Column="0" > </Label>
             <Label Text="{Binding BatteryLevel}" Grid.Row="2" Grid.Column="1"></Label> 
         </Grid>
-        
+        <Label Text="Test"></Label>
     </StackLayout>
     
 </ContentPage>
