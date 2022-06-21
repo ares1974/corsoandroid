@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="WorkshopPomeriggio.Views.MonkeyDetailsPage"
+             Title="{Binding Title}"
+             >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center"> 
+            <Label Text="{Binding SelectedMonkey.Name}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Image 
+                Source="{Binding SelectedMonkey.Image}"
+                HeightRequest="100"
+                WidthRequest="100"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Aspect="AspectFill">
+                <Image.Clip>
+                    <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50"></EllipseGeometry>
+                </Image.Clip>
+
+            </Image>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
